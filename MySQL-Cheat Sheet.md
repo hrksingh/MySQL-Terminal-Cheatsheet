@@ -144,7 +144,8 @@ SELECT * FROM products;
  
 <h1> Backup and Restore </h1>
 18. Backup
->Backup: Before we conclude this example, let's run the mysqldump utility program to dump out (backup) the entire southwind database.
+
+>Backup: Before we conclude this example, let's run the mysqldump utility program to dump out (backup) the entire restapi database.
 
 The SYNTAX for the mysqldump utility program is as follows:
 
@@ -169,3 +170,16 @@ The SYNTAX for the mysqldump utility program is as follows:
 > mysqldump -u root -p --databases restapi > "d:\myProject\backup_restapi.sql"
 ```
 * Study the output file, which contains CREATE DATABASE, CREATE TABLE and INSERT statements to re-create the tables dumped.
+
+19.Restore:
+
+The utility mysqldump produces a SQL script (consisting of CREATE TABLE and INSERT commands to re-create the tables and loading their data). You can restore from the backup by running the script either:
+
+```mysql
+
+    -- Start a MySQL client
+    mysql> source d:/myProject/backup_southwind.sql
+       -- Provide absolute or relative filename of the script
+       -- Use Unix-style forward slash (/) as path separator
+       
+   ```
