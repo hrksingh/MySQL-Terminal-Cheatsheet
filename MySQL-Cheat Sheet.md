@@ -111,3 +111,14 @@ mysql> LOAD DATA LOCAL INFILE 'd:/myProject/products_in.csv' INTO TABLE products
          COLUMNS TERMINATED BY ','
          LINES TERMINATED BY '\r\n';
    ```
+
+16. SELECT ... INTO OUTFILE ...
+
+Complimenting LOAD DATA command, you can use SELECT ... INTO OUTFILE fileName FROM tableName to export data from a table to a text file. For example,
+
+```mysql
+(For Windows)
+mysql> SELECT * FROM products INTO OUTFILE 'd:/myProject/products_out.csv' 
+         COLUMNS TERMINATED BY ','
+         LINES TERMINATED BY '\r\n';
+   ```
