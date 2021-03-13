@@ -2,9 +2,9 @@
 
 1. Go to MySQL path  <code style="background:yellow;color:black"><strong>(cd C:\Program Files\MySQL\MySQL Server 8.0\bin)</strong></code>
 
-2. ```mysql > mysql -uroot -p ```  <code style="background:yellow;color:black"><strong>--->(current user(root))</strong></code>
+2./>mysql -uroot -p   <code style="background:yellow;color:black"><strong>--->(current user(root))</strong></code>
 
-3. ```mysql SHOW DATABASES; ``` <code style="background:yellow;color:black"><strong>--->(show databases for that user)</strong></code>
+3. SHOW DATABASES;  <code style="background:yellow;color:black"><strong>--->(show databases for that user)</strong></code>
 ```mysql
 +--------------------+
 | Database           |
@@ -18,9 +18,9 @@
 +--------------------+
 ```
 
-4.```mysql  mysql> USE restapi ``` <code style="background:yellow;color:black"><strong>--->(it select database to use)</strong></code>
+4.mysql> USE restapi  <code style="background:yellow;color:black"><strong>--->(it select database to use)</strong></code>
 
-5.```mysql  mysql> SELECT DATABASE(); ```  <code style="background:yellow;color:black"><strong>--->(it shows current using DB)</strong></code>
+5.mysql> SELECT DATABASE();   <code style="background:yellow;color:black"><strong>--->(it shows current using DB)</strong></code>
 ```mysql
 +------------+
 | DATABASE() |
@@ -29,7 +29,7 @@
 +------------+
 ```
 
-6. ```mysql  mysql> SHOW TABLES; ```
+6.  mysql> SHOW TABLES; 
 ```mysql
 +--------------------+
 | Tables_in_restapi  |
@@ -39,7 +39,7 @@
 +--------------------+
 ```
 
-7. ```mysql mysql> Select * from books; ```
+7. mysql> Select * from books; 
 ```mysql
 +---------+-------------+-------------+------------+
 | book_id | book_author | book_name   | book_price |
