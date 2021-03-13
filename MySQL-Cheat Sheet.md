@@ -185,6 +185,5 @@ The utility mysqldump produces a SQL script (consisting of CREATE TABLE and INSE
    ```
 
 
-20. For more examples and details [view this][]
+20. For more details and examples <a href="https://www3.ntu.edu.sg/home/ehchua/programming/sql/MySQL_Beginner.html" title="ntu">visit this</a>
 
-[view this]: "https://www3.ntu.edu.sg/home/ehchua/programming/sql/MySQL_Beginner.html"
