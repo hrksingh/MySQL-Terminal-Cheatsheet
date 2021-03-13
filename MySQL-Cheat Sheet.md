@@ -1,6 +1,9 @@
 <span style="color:red"><Strong><h1>MySQL-Terminal-Cheatsheet</h1></strong></span> 
 
-1. Go to MySQL path  <code style="background:yellow;color:black"><strong>(cd C:\Program Files\MySQL\MySQL Server 8.0\bin)</strong></code>
+1. Go to MySQL path  
+```cmd 
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+```
 
 2. \>mysql -uroot -p   <code style="background:yellow;color:black"><strong>--->(current user(root))</strong></code>
 
