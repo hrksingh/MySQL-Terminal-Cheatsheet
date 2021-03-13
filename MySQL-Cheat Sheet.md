@@ -2,9 +2,9 @@
 
 1. Go to MySQL path  <code style="background:yellow;color:black"><strong>(cd C:\Program Files\MySQL\MySQL Server 8.0\bin)</strong></code>
 
-2. \> mysql -uroot -p  <strong>--->(current user(root))</strong>
+2. \> mysql -uroot -p  <code style="background:yellow;color:black"><strong>--->(current user(root))</strong></code>
 
-3. SHOW DATABASES;  <strong>--->(show databases for that user)</strong>
+3. SHOW DATABASES;  <code style="background:yellow;color:black"><strong>--->(show databases for that user)</strong></code>
 ```mysql
 +--------------------+
 | Database           |
@@ -18,9 +18,9 @@
 +--------------------+
 ```
 
-4. mysql> USE restapi <strong>--->(it select database to use)</strong>
+4. mysql> USE restapi <code style="background:yellow;color:black"><strong>--->(it select database to use)</strong></code>
 
-5. mysql> SELECT DATABASE();  <strong>--->(it shows current using DB)</strong>
+5. mysql> SELECT DATABASE();  <code style="background:yellow;color:black"><strong>--->(it shows current using DB)</strong></code>
 ```mysql
 +------------+
 | DATABASE() |
