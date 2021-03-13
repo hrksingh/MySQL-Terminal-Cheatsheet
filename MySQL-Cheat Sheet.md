@@ -5,12 +5,12 @@
 cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 ```
 
-2. current user(root)
+2. sign with user -->  current user here (root)
 ```cmd
 >mysql -uroot -p   
 ```
 
-3.show databases for that user
+3. show databases for that user
 ```mysql
 mysql> SHOW DATABASES;
 
@@ -26,12 +26,12 @@ mysql> SHOW DATABASES;
 +--------------------+
 ```
 
-4.It select database to use
+4. It select database to use
 ```mysql
 mysql> USE restapi;
 ```
 
-5.It shows current using DB
+5. It shows current using DB
 ```mysql
 mysql> SELECT DATABASE();
 
