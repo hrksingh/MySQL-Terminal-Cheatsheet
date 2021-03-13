@@ -76,47 +76,5 @@ Create Table: CREATE TABLE `books` (
   PRIMARY KEY (`book_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
-
-10. <ol>
-<li>-- Insert a row with all the column values</li>
->mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23);
-
  
-<li> Insert multiple rows in one command
--- Inserting NULL to the auto_increment column results in max_value + 1 /<li>
->mysql> INSERT INTO products VALUES
-         (NULL, 'PEN', 'Pen Blue',  8000, 1.25),
-         (NULL, 'PEN', 'Pen Black', 2000, 1.25);
-
- 
-<li>-- Insert value to selected columns
--- Missing value for the auto_increment column also results in max_value + 1</li>
->mysql> INSERT INTO products (productCode, name, quantity, price) VALUES
-         ('PEC', 'Pencil 2B', 10000, 0.48),
-         ('PEC', 'Pencil 2H', 8000, 0.49);
-
- 
-<li>-- Missing columns get their default values</li>
->mysql> INSERT INTO products (productCode, name) VALUES ('PEC', 'Pencil HB');
-
- </ol>
- 
--- Query the table
-```mysql
-mysql> SELECT * FROM products;
-+-----------+-------------+-----------+----------+------------+
-| productID | productCode | name      | quantity | price      |
-+-----------+-------------+-----------+----------+------------+
-|      1001 | PEN         | Pen Red   |     5000 |       1.23 |
-|      1002 | PEN         | Pen Blue  |     8000 |       1.25 |
-|      1003 | PEN         | Pen Black |     2000 |       1.25 |
-|      1004 | PEC         | Pencil 2B |    10000 |       0.48 |
-|      1005 | PEC         | Pencil 2H |     8000 |       0.49 |
-|      1006 | PEC         | Pencil HB |        0 | 9999999.99 |
-+-----------+-------------+-----------+----------+------------+
-6 rows in set (0.02 sec)
- ```
--- Remove the last row
-mysql> DELETE FROM products WHERE productID = 1006;
-
-
+10. mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23); <code style="background:yellow;color:black"><strong>(Insert a row with all the column values)</strong></code>
