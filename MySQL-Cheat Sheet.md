@@ -103,3 +103,11 @@ mysql> SELECT NOW();
 | 2021-03-13 18:09:00 |
 +---------------------+
 ```
+
+15. You can load the raw data into the products table as follows:
+>make sure you have csv file ready with data on location
+```mysql 
+mysql> LOAD DATA LOCAL INFILE 'd:/myProject/products_in.csv' INTO TABLE products
+         COLUMNS TERMINATED BY ','
+         LINES TERMINATED BY '\r\n';
+   ```
