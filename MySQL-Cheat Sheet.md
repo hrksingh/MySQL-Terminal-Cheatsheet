@@ -77,7 +77,14 @@ Create Table: CREATE TABLE `books` (
 ) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 
-11. <code style="background:yellow;color:black"><strong>(Insert a row with all the column values)</strong></code>
+11. Insert a row with all the column values
  ```bash
   mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23);
  ```  
+ 
+ 12. Insert multiple rows in one command and Inserting NULL to the auto_increment column results in max_value + 1
+  ```bash
+  mysql> INSERT INTO products VALUES
+         (NULL, 'PEN', 'Pen Blue',  8000, 1.25),
+         (NULL, 'PEN', 'Pen Black', 2000, 1.25);
+   ``` 
