@@ -142,7 +142,8 @@ SELECT * FROM products;
      -- Use Unix-style forward slash (/) as directory separator
  ```
  
-18. <h1> Backup and Restore </h1>
+<h1> Backup and Restore </h1>
+18. Backup
 >Backup: Before we conclude this example, let's run the mysqldump utility program to dump out (backup) the entire southwind database.
 
 The SYNTAX for the mysqldump utility program is as follows:
@@ -151,11 +152,19 @@ The SYNTAX for the mysqldump utility program is as follows:
 ```mysql
 -- Dump selected databases with --databases option
 > mysqldump -u username -p --databases database1Name [database2Name ...] > backupFile.sql
+
 -- Dump all databases in the server with --all-databases option, except mysql.user table (for security)
 > mysqldump -u root -p --all-databases --ignore-table=mysql.user > backupServer.sql
   
 -- Dump all the tables of a particular database
 > mysqldump -u username -p databaseName > backupFile.sql
+
 -- Dump selected tables of a particular database
 > mysqldump -u username -p databaseName table1Name [table2Name ...] > backupFile.sql
+```
+---
+```mysql
+-- Start a NEW "cmd"
+> cd path-to-mysql-bin
+> mysqldump -u root -p --databases southwind > "d:\myProject\backup_southwind.sql"
 ```
