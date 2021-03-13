@@ -1,10 +1,10 @@
 # MySQL-Terminal-Cheatsheet
 
-1. Go to MySQL path   >(cd C:\Program Files\MySQL\MySQL Server 8.0\bin)
+1. Go to MySQL path  <strong>--->(cd C:\Program Files\MySQL\MySQL Server 8.0\bin)</strong>
 
-2. \> mysql -uroot -p    >(current user(root))
+2. \> mysql -uroot -p  <strong>--->(current user(root))</strong>
 
-3. SHOW DATABASES;    >(show databases for that user)
+3. SHOW DATABASES;  <strong>--->(show databases for that user)</strong>
 ```mysql
 +--------------------+
 | Database           |
@@ -18,9 +18,9 @@
 +--------------------+
 ```
 
-4. mysql> USE restapi    >(it select database to use)
+4. mysql> USE restapi <strong>--->(it select database to use)</strong>
 
-5. mysql> SELECT DATABASE();     >(it shows current using DB)
+5. mysql> SELECT DATABASE();  <strong>--->(it shows current using DB)</strong>
 ```mysql
 +------------+
 | DATABASE() |
