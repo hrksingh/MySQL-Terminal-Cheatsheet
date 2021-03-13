@@ -171,7 +171,7 @@ The SYNTAX for the mysqldump utility program is as follows:
 ```
 * Study the output file, which contains CREATE DATABASE, CREATE TABLE and INSERT statements to re-create the tables dumped.
 
-19.Restore:
+19. Restore:
 
 The utility mysqldump produces a SQL script (consisting of CREATE TABLE and INSERT commands to re-create the tables and loading their data). You can restore from the backup by running the script either:
 
@@ -183,3 +183,8 @@ The utility mysqldump produces a SQL script (consisting of CREATE TABLE and INSE
        -- Use Unix-style forward slash (/) as path separator
        
    ```
+
+
+20. For more examples and details [view this][]
+
+[view this]: "https://www3.ntu.edu.sg/home/ehchua/programming/sql/MySQL_Beginner.html"
