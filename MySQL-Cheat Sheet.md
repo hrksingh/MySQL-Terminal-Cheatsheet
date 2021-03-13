@@ -137,9 +137,8 @@ SELECT * FROM products;
 
 via the "source" command in a MySQL client
 
+```mysql
+  mysql> source d:/myProject/load_products.sql
+     -- Use Unix-style forward slash (/) as directory separator
+ ```
 
-
-    ```mysql
-    mysql> source d:/myProject/load_products.sql
-       -- Use Unix-style forward slash (/) as directory separator
-     ```
