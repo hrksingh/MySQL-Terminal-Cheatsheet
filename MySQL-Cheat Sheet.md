@@ -82,9 +82,14 @@ Create Table: CREATE TABLE `books` (
   mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23);
  ```  
  
- 12. Insert multiple rows in one command and Inserting NULL to the auto_increment column results in max_value + 1
+12. Insert multiple rows in one command and Inserting NULL to the auto_increment column results in max_value + 1
   ```bash
   mysql> INSERT INTO products VALUES
          (NULL, 'PEN', 'Pen Blue',  8000, 1.25),
          (NULL, 'PEN', 'Pen Black', 2000, 1.25);
    ``` 
+   
+13. Remove the last row
+ ```bash
+mysql> DELETE FROM products WHERE productID = 1006;
+```
