@@ -135,7 +135,7 @@ INSERT INTO products VALUES (2001, 'PEC', 'Pencil 3B', 500, 0.52),
 SELECT * FROM products;
 ```
 
-via the "source" command in a MySQL client
+<Strong>via the "source" command in a MySQL client</strong>
 
 ```mysql
   mysql> source d:/myProject/load_products.sql
