@@ -2,7 +2,7 @@
 
 1. Go to MySQL path  <code style="background:yellow;color:black"><strong>(cd C:\Program Files\MySQL\MySQL Server 8.0\bin)</strong></code>
 
-2.\>mysql -uroot -p   <code style="background:yellow;color:black"><strong>--->(current user(root))</strong></code>
+2. \>mysql -uroot -p   <code style="background:yellow;color:black"><strong>--->(current user(root))</strong></code>
 
 3. SHOW DATABASES;  <code style="background:yellow;color:black"><strong>--->(show databases for that user)</strong></code>
 ```mysql
