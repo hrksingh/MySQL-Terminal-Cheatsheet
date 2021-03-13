@@ -5,10 +5,15 @@
 cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 ```
 
-2. \>mysql -uroot -p   <code style="background:yellow;color:black"><strong>--->(current user(root))</strong></code>
+2. current user(root)
+```cmd
+>mysql -uroot -p   
+```
 
-3. SHOW DATABASES;  <code style="background:yellow;color:black"><strong>--->(show databases for that user)</strong></code>
+3.show databases for that user
 ```mysql
+mysql> SHOW DATABASES;
+
 +--------------------+
 | Database           |
 +--------------------+
@@ -21,10 +26,15 @@ cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 +--------------------+
 ```
 
-4.mysql> USE restapi  <code style="background:yellow;color:black"><strong>--->(it select database to use)</strong></code>
-
-5.mysql> SELECT DATABASE();   <code style="background:yellow;color:black"><strong>--->(it shows current using DB)</strong></code>
+4.It select database to use
 ```mysql
+mysql> USE restapi;
+```
+
+5.It shows current using DB
+```mysql
+mysql> SELECT DATABASE();
+
 +------------+
 | DATABASE() |
 +------------+
@@ -32,8 +42,10 @@ cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 +------------+
 ```
 
-6.  mysql> SHOW TABLES; 
+6. Show all tables in Database
 ```mysql
+mysql> SHOW TABLES; 
+
 +--------------------+
 | Tables_in_restapi  |
 +--------------------+
@@ -42,8 +54,10 @@ cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 +--------------------+
 ```
 
-7. mysql> Select * from books; 
+7. Select statement
 ```mysql
+mysql> Select * from books;
+
 +---------+-------------+-------------+------------+
 | book_id | book_author | book_name   | book_price |
 +---------+-------------+-------------+------------+
@@ -53,8 +67,10 @@ cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 +---------+-------------+-------------+------------+
 ```
 
-8. mysql> DESCRIBE books; 
+8. Shows Metadata
 ```mysql
+ mysql> DESCRIBE books; 
+ 
 +-------------+--------------+------+-----+---------+----------------+
 | Field       | Type         | Null | Key | Default | Extra          |
 +-------------+--------------+------+-----+---------+----------------+
@@ -69,6 +85,7 @@ cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 ```mysql
 
 mysql> SHOW CREATE TABLE books \G
+
 *************************** 1. row ***************************
        Table: books
 Create Table: CREATE TABLE `books` (
@@ -81,25 +98,26 @@ Create Table: CREATE TABLE `books` (
 ```
 
 11. Insert a row with all the column values
- ```bash
+ ```cmd
   mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23);
  ```  
  
 12. Insert multiple rows in one command and Inserting NULL to the auto_increment column results in max_value + 1
-  ```bash
+  ```cmd
   mysql> INSERT INTO products VALUES
          (NULL, 'PEN', 'Pen Blue',  8000, 1.25),
          (NULL, 'PEN', 'Pen Black', 2000, 1.25);
    ``` 
    
 13. Remove the last row
- ```bash
+ ```cmd
 mysql> DELETE FROM products WHERE productID = 1006;
 ```
 
 14. you can SELECT an expression or evaluate a built-in function.
 ```mysql
 mysql> SELECT NOW();
+
 +---------------------+
 | NOW()               |
 +---------------------+
