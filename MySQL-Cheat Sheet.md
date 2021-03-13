@@ -76,8 +76,8 @@ Create Table: CREATE TABLE `books` (
   PRIMARY KEY (`book_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
- 
-10. ``` bash
-11.  mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23);
-12. ``` 
-13.  <code style="background:yellow;color:black"><strong>(Insert a row with all the column values)</strong></code>
+
+11. <code style="background:yellow;color:black"><strong>(Insert a row with all the column values)</strong></code>
+ ```bash
+  mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23);
+ ```  
