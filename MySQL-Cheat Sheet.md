@@ -166,5 +166,6 @@ The SYNTAX for the mysqldump utility program is as follows:
 ```mysql
 -- Start a NEW "cmd"
 > cd path-to-mysql-bin
-> mysqldump -u root -p --databases southwind > "d:\myProject\backup_southwind.sql"
+> mysqldump -u root -p --databases restapi > "d:\myProject\backup_restapi.sql"
 ```
+* Study the output file, which contains CREATE DATABASE, CREATE TABLE and INSERT statements to re-create the tables dumped.
