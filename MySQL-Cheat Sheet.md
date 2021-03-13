@@ -93,3 +93,13 @@ Create Table: CREATE TABLE `books` (
  ```bash
 mysql> DELETE FROM products WHERE productID = 1006;
 ```
+
+14. you can SELECT an expression or evaluate a built-in function.
+```mysql
+mysql> SELECT NOW();
++---------------------+
+| NOW()               |
++---------------------+
+| 2021-03-13 18:09:00 |
++---------------------+
+```
