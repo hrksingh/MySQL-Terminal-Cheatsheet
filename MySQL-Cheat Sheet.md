@@ -5,7 +5,7 @@
 cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 ```
 
-2. sign with user -->  current user here (root)
+2. sign-in with user -->  current user here (root)
 ```cmd
 >mysql -uroot -p   
 ```
