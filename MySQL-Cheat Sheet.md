@@ -77,35 +77,32 @@ Create Table: CREATE TABLE `books` (
 ) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 
-10. ```mysql
--- Insert a row with all the column values
-mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23);
-Query OK, 1 row affected (0.04 sec)
+10. <ol>
+<li>-- Insert a row with all the column values</li>
+>mysql> INSERT INTO products VALUES (1001, 'PEN', 'Pen Red', 5000, 1.23);
+
  
--- Insert multiple rows in one command
--- Inserting NULL to the auto_increment column results in max_value + 1
-mysql> INSERT INTO products VALUES
+<li> Insert multiple rows in one command
+-- Inserting NULL to the auto_increment column results in max_value + 1 /<li>
+>mysql> INSERT INTO products VALUES
          (NULL, 'PEN', 'Pen Blue',  8000, 1.25),
          (NULL, 'PEN', 'Pen Black', 2000, 1.25);
-Query OK, 2 rows affected (0.03 sec)
-Records: 2  Duplicates: 0  Warnings: 0
+
  
--- Insert value to selected columns
--- Missing value for the auto_increment column also results in max_value + 1
-mysql> INSERT INTO products (productCode, name, quantity, price) VALUES
+<li>-- Insert value to selected columns
+-- Missing value for the auto_increment column also results in max_value + 1</li>
+>mysql> INSERT INTO products (productCode, name, quantity, price) VALUES
          ('PEC', 'Pencil 2B', 10000, 0.48),
          ('PEC', 'Pencil 2H', 8000, 0.49);
-Query OK, 2 row affected (0.03 sec)
- 
--- Missing columns get their default values
-mysql> INSERT INTO products (productCode, name) VALUES ('PEC', 'Pencil HB');
-Query OK, 1 row affected (0.04 sec)
 
--- 2nd column (productCode) is defined to be NOT NULL
-mysql> INSERT INTO products values (NULL, NULL, NULL, NULL, NULL);
-ERROR 1048 (23000): Column 'productCode' cannot be null
+ 
+<li>-- Missing columns get their default values</li>
+>mysql> INSERT INTO products (productCode, name) VALUES ('PEC', 'Pencil HB');
+
+ </ol>
  
 -- Query the table
+```mysql
 mysql> SELECT * FROM products;
 +-----------+-------------+-----------+----------+------------+
 | productID | productCode | name      | quantity | price      |
@@ -118,8 +115,8 @@ mysql> SELECT * FROM products;
 |      1006 | PEC         | Pencil HB |        0 | 9999999.99 |
 +-----------+-------------+-----------+----------+------------+
 6 rows in set (0.02 sec)
- 
+ ```
 -- Remove the last row
 mysql> DELETE FROM products WHERE productID = 1006;
 
-```
+
