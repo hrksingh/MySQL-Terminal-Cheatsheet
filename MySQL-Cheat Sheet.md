@@ -121,3 +121,25 @@ mysql> SELECT * FROM products INTO OUTFILE 'd:/myProject/products_out.csv'
          COLUMNS TERMINATED BY ','
          LINES TERMINATED BY '\r\n';
    ```
+   
+17. Running a SQL Script
+ 
+Instead of manually entering each of the SQL statements, you can keep many SQL statements in a text file, called SQL script, and run the script. For example, use a programming text editor to prepare the following script and save as "load_products.sql" under "d:\myProject"
+
+```mysql
+DELETE FROM products;
+INSERT INTO products VALUES (2001, 'PEC', 'Pencil 3B', 500, 0.52),
+                            (NULL, 'PEC', 'Pencil 4B', 200, 0.62),
+                            (NULL, 'PEC', 'Pencil 5B', 100, 0.73),
+                            (NULL, 'PEC', 'Pencil 6B', 500, 0.47);
+SELECT * FROM products;
+```
+
+<b>You can run the script either:</b>
+
+    a. via the "source" command in a MySQL client
+
+    ```mysql
+    mysql> source d:/myProject/load_products.sql
+       -- Use Unix-style forward slash (/) as directory separator
+     ```
